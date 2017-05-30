@@ -1,0 +1,79 @@
+/*
+    NAV ELEMENT BACKGROUND : orange
+    NAV ELEMENT HOVER      : red
+
+    BREAKPOINTS
+
+    tablet  : 600px
+    desktop : 900px
+*/
+
+/*** Default Mobile Styles ****************************/
+body{
+    text-align: center;
+
+/*Note: I changed the font to Helvetica on purpose because Comic Sans is hideous.*/
+
+    font-family: Helvetica, "Comic Sans", sans-serif;
+}
+
+nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+nav a{
+  display: block;
+  padding: 22px 2%;
+  width: 100%;
+  color: #ffffff;
+  background: #ff7f24;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 2px #ff0000;
+  text-shadow: 0 2px 2px #000000;
+}
+
+nav a:hover{
+  background-color: #ff0000;
+}
+
+@media screen and ( min-width: 600px ){
+  nav{
+    flex-wrap: wrap;
+  }
+  nav a{
+    flex-basis: 45%;
+  }
+}
+
+@media screen and ( min-width: 900px ){
+  nav{
+    flex-wrap: nowrap;
+  }
+  nav a{
+    flex-basis: 20%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**** Desktop Styles ***********************************/
